@@ -11,9 +11,9 @@ Django==4.2
 django-jazzmin==2.6.0
 djangorestframework==3.14.0
 kombu==5.3.5
-pillow==10.2.0
+Pillow
 prompt-toolkit==3.0.43
-psycopg2==2.9.9
+psycopg2-binary
 python-dateutil==2.9.0.post0
 pytz==2024.1
 six==1.16.0
