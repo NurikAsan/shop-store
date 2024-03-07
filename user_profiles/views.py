@@ -7,7 +7,12 @@ from rest_framework import generics
 class ProductCreateView(generics.CreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
- 
+
+    def post(self, request, *args, **kwargs):
+        title = request.data.get('title')
+        print(title)
+        return super().post(request, *args, **kwargs)
+
 
 class ProductDetailsView(generics.RetrieveAPIView):
     queryset = Product.objects.all()
